@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transport List</title>
+  <style>
+    /* Page + card */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .card {
+      width: 360px;                /* adjust to taste */
+      background: #fff7ef;         /* light warm background like the image */
+      border-radius: 14px;
+      border: 2px solid #d9d6d6;
+      box-shadow: 0 2px 0 rgba(0,0,0,0.04);
+      padding: 26px 30px;
+      box-sizing: border-box;
+    }
+
+    /* Main ordered list */
+    .card ol {
+      margin: 0;
+      padding-left: 1.1em;   /* keep numbers outside but not too far */
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .card ol > li {
+      margin: 10px 0;
+    }
+
+    /* Nested bullet lists */
+    .card ul {
+      margin: 8px 0 0 1.05em;     /* slight indent under each number item */
+      padding-left: 1.05em;       /* standard bullet indent */
+      list-style-type: disc;
+      color: #222;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Make nested bullets a little smaller and closer together */
+    .card ol > li > ul > li {
+      margin: 6px 0;
+    }
+
+    /* Optional: make markers (numbers and bullets) slightly bolder */
+    .card ol li::marker,
+    .card ul li::marker {
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Transport list card">
+    <ol>
+      <li>Car</li>
+
+      <li>
+        Bike
+        <ul>
+          <li>Electric Bike</li>
+          <li>Super Bike</li>
+          <li>Bike</li>
+        </ul>
+      </li>
+
+      <li>
+        Plane
+        <ul>
+          <li>Fighter Plane</li>
+          <li>Commercial Plane</li>
+          <li>Private Plane</li>
+        </ul>
+      </li>
+
+      <li>bhushan kumar </li>
+    </ol>
+  </div>
+</body>
+</html>
